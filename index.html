@@ -31,18 +31,19 @@
                         <img class="headerrocket" src="assets/img/rocket.png" alt="rocket">
                     </span>
                 </p>
-                <p>SCROLL TO SEE MORE —</p>
+                <a class="scrollupside" href="#scroll">SCROLL TO SEE MORE —</a>
+
             </article>
-            <div class="floating">
-                <img src="assets/img/ilustracion_people.png" alt="">
-            </div>
+
+            <img class="mymovingboy" src="assets/img/ilustracion_people.png" alt="">
+
         </section>
     </header>
     <!--Main-->
     <main>
         <!--Main section 1-->
         <section>
-            <div>
+            <div id="scroll">
                 <img src="assets/img/images.jpg" alt="morepics">
             </div>
             <!--Main section 1 article 1-->
@@ -208,14 +209,28 @@
     </main>
     <!--Footer-->
     <footer>
-        <h2>Do you like this challenge? </h2>
-        <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-        <form action="">
-            <input class="inputemail" type="email" name="" id="" placeholder="Write your email here">
-        </form>
-        <form action="">
-            <input class="inputbutton" type="button" value="Subscribe">
-        </form>
+        <section>
+            <article id="showBox" class="emailConfirm">
+                <p>🥳</p>
+                <h3>YOUR EMAIL HAS BEEN CONFIRMED. THANKS FOR SUBSCRIBING</h3>
+                <p>Now we just need to confirm your email address - please click the link in the email we sent you,
+                    Thanks!
+                </p>
+                <button onclick="backClick()">BACK TO DESIGNERCHALLENGE.COM</button>
+            </article>
+            <article id="switchBox">
+
+                <h2>Do you like this challenge? </h2>
+                <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+                <form action="">
+                    <input onchange="showEmail()" class="inputemail" type="email" name="" id="email"
+                        placeholder="Write your email here">
+                </form>
+                <form action="">
+                    <input onclick="onClick()" class="inputbutton" type="button" value="Subscribe">
+                </form>
+            </article>
+        </section>
         <nav>
             <p>Created with Love by a WebDesigner
                 <span>
